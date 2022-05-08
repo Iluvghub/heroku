@@ -1,4 +1,4 @@
-FROM ghcr.io/iluvghub/heroku:latest
+FROM ubuntu:latest
 
 # Copies config(if it exists)
 COPY . .
