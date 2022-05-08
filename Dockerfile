@@ -1,4 +1,5 @@
-FROM ubuntu:latest
+FROM python:3.8.5-slim-buster
+
 
 # Copies config(if it exists)
 COPY . .
