@@ -1,4 +1,4 @@
-FROM ghcr.io/kangershub/shelltoolkit:latest
+FROM ghcr.io/iluvghub/heroku:latest
 
 # Copies config(if it exists)
 COPY . .
