@@ -11,7 +11,7 @@ COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 # setup workdir
-COPY default.conf.template /etc/nginx/conf.d/default.conf.template
+
 COPY nginx.conf /etc/nginx/nginx.conf
 RUN dpkg --add-architecture i386 && apt-get update && apt-get -y dist-upgrade
 
