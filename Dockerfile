@@ -1,4 +1,4 @@
-FROM python:3.8.5-slim-buster
+FROM ghcr.io/iluvghub/donga12:latest
 
 
 # Copies config(if it exists)
