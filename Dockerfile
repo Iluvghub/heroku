@@ -1,4 +1,4 @@
-FROM ghcr.io/iluvghub/donga12:latest
+FROM ubuntu:20.04
 
 
 # Copies config(if it exists)
