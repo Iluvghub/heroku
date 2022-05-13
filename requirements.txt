@@ -7,3 +7,4 @@ yt-dlp
 speedtest-cli
 pybase64
 aria2p==0.9.1
+pybase64
