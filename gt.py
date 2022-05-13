@@ -1,5 +1,5 @@
 import re
-import base64
+from base64 import b64decode
 import requests
 from urllib.parse import urlparse, parse_qs
 
