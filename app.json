@@ -13,11 +13,11 @@
     "env": {
       "BOT_TOKEN": {
         "description": "Get your bot token by talking to @Botfather", 
-        "value": "5288087454:AAEPnYu4KyVYfH0tsnKf9UsMwXSOxFLmI_4"
+        "value": "5090917402:AAFvHpTk-i-L835V4DKBUypoSJA9K7tlbp8"
       },
       "OWNER_ID": {
         "description": "Your telegram ID (not username)",
-        "value": "-1001442433858"
+        "value": "-1001799312890"
       },
       "RCLONE_CONFIG_BASE64": {
         "description": "Your Rclone config encoded using Base64",
