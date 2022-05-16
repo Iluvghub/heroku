@@ -43,3 +43,4 @@ typer == 0.4.0
 hyper
 jwt
 pybase64
+cfscrape
