@@ -2,6 +2,7 @@ import re
 import requests
 from lxml import etree
 from urllib.parse import urlparse
+from cfscrape import create_scraper
 
 EMAIL = "Johnwick.mirror.leech@gmail.com"
 PWSSD = "Modapps@430"
