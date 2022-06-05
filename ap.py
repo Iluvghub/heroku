@@ -4,9 +4,9 @@ from lxml import etree
 from urllib.parse import urlparse
 
 
-EMAIL = "Johnwick.mirror.leech@gmail.com"
+EMAIL = "thanosrapooka@gmail.com"
 PWSSD = "Modapps@430"
-GDRIVE_FOLDER_ID = "1WuaaTESEiOFAvdjS0JDFReNZKR2hjTgc"
+GDRIVE_FOLDER_ID = "1gLiX6ScI-cxFDhqL5odHmuebA_3kPxG1"
 url = input('enter url:') 
 
 def appdrive_dl(url: str) -> str:
