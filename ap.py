@@ -2,7 +2,7 @@ import re
 import requests
 from lxml import etree
 from urllib.parse import urlparse
-
+from cfscrape import create_scraper
 
 EMAIL = "thanosrapooka@gmail.com"
 PWSSD = "Modapps@430"
@@ -148,5 +148,16 @@ def appdrive_dl(url: str) -> str:
    
 print(appdrive_dl(url))   
 
+
+SHORTENER = "urlshortx.com"
+SHORTENER_API = "8fabf1c36bcaf7fb959b360ac8574f39815ae901"
+
+longurl = appdrive_dl(url) 
+
+def short_url(longurl: str) -> str:
+     cget = create_scraper().get
+     link = cget(f'https://{SHORTENER}/api?api={SHORTENER_API}&url={longurl}&format=text').text
+     return link
+print(short_url(longurl))
 
 
