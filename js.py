@@ -4,6 +4,7 @@ import argparse
 import subprocess
 import pathlib
 import shutil
+from cfscrape import create_scraper
 
 FILE_DIRECTORY=str(pathlib.Path(__file__).parent.absolute())
 TEMPORARY_PATH = FILE_DIRECTORY+"/cache"
@@ -38,7 +39,28 @@ fileName = args.res
 
 def get_metadata(VideoID):
     url = Meta_URL + VideoID
-    print(url) 
+    headers = {
+
+         'authority': 'prod.media.jio.com',
+         'accept': '*/*',
+         'accept-language': 'en-US,en;q=0.9',
+         'cache-control': 'no-cache',
+         'origin': 'https://prod.media.jio.com',
+         'pragma': 'no-cache',
+         'referer': 'https://prod.media.jio.com/',
+         'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"',
+         'sec-ch-ua-mobile': '?0',
+         'sec-ch-ua-platform': '"Windows"',
+         'sec-fetch-dest': 'empty',
+         'sec-fetch-mode': 'cors',
+         'sec-fetch-site': 'cross-site',
+         'user-agent': 'JioOnDemand/1.5.2.1 (Linux;Android 4.4.2) Jio',
+    }
+
+   
+    res = requests.get( url = Meta_URL + VideoID, headers=headers)
+    mp4_url  = res.json()['thumb']
+    print(mp4_url)
     test = input ('Enter thumb: ')
     m3u8 = First + test + Second
     output = OUTPUT_PATH + '/' + f"{fileName}"
